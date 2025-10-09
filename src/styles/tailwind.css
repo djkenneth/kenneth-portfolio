@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --color-background: #ffffff; /* white */
+    --color-foreground: #111827; /* gray-900 */
+    --color-card: #ffffff; /* white */
+    --color-card-foreground: #111827; /* gray-900 */
+    --color-popover: #ffffff; /* white */
+    --color-popover-foreground: #111827; /* gray-900 */
+    --color-primary: #1a1a1a; /* gray-900 */
+    --color-primary-foreground: #ffffff; /* white */
+    --color-secondary: #f8f9fa; /* gray-50 */
+    --color-secondary-foreground: #111827; /* gray-900 */
+    --color-muted: #f7fafc; /* gray-50 */
+    --color-muted-foreground: #6b7280; /* gray-500 */
+    --color-accent: #3b82f6; /* blue-500 */
+    --color-accent-foreground: #ffffff; /* white */
+    --color-destructive: #dc2626; /* red-600 */
+    --color-destructive-foreground: #ffffff; /* white */
+    --color-success: #10b981; /* emerald-500 */
+    --color-success-foreground: #ffffff; /* white */
+    --color-warning: #d69e2e; /* yellow-600 */
+    --color-warning-foreground: #ffffff; /* white */
+    --color-error: #e53e3e; /* red-500 */
+    --color-error-foreground: #ffffff; /* white */
+    --color-border: #e5e7eb; /* gray-200 */
+    --color-input: #ffffff; /* white */
+    --color-ring: #3b82f6; /* blue-500 */
+    
+    /* Supporting Colors */
+    --color-text-primary: #2d3748; /* gray-700 */
+    --color-text-secondary: #718096; /* gray-500 */
+    --color-surface: #f7fafc; /* gray-50 */
+    --color-brand-secondary: #4a5568; /* gray-600 */
+    --color-conversion-accent: #3182ce; /* blue-600 */
+    
+    /* Spacing System */
+    --spacing-xs: 0.5rem; /* 8px */
+    --spacing-sm: 0.75rem; /* 12px */
+    --spacing-md: 1rem; /* 16px */
+    --spacing-lg: 1.5rem; /* 24px */
+    --spacing-xl: 2rem; /* 32px */
+    --spacing-2xl: 3rem; /* 48px */
+    --spacing-3xl: 4rem; /* 64px */
+    --spacing-4xl: 6rem; /* 96px */
+    
+    /* Typography Scale */
+    --font-size-xs: 0.75rem; /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-xl: 1.25rem; /* 20px */
+    --font-size-2xl: 1.5rem; /* 24px */
+    --font-size-3xl: 1.875rem; /* 30px */
+    --font-size-4xl: 2.25rem; /* 36px */
+    --font-size-5xl: 3rem; /* 48px */
+    --font-size-6xl: 3.75rem; /* 60px */
+    
+    /* Animation Timing */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Shadow System */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-primary;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl font-semibold;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl font-medium;
+  }
+  
+  h5 {
+    @apply text-lg md:text-xl font-medium;
+  }
+  
+  h6 {
+    @apply text-base md:text-lg font-medium;
+  }
+  
+  p {
+    @apply text-text-primary leading-relaxed;
+  }
+  
+  code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
+    @apply text-sm bg-muted px-2 py-1 rounded;
+  }
+  
+  pre {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
+    @apply bg-muted p-4 rounded-lg overflow-x-auto;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2;
+  }
+  
+  /* Selection styles */
+  ::selection {
+    @apply bg-accent text-accent-foreground;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent;
+  }
+}
+
+@layer components {
+  /* Brand Typography Classes */
+  .text-brand-headline {
+    font-family: 'Inter', sans-serif;
+    @apply font-semibold text-primary;
+    letter-spacing: -0.02em;
+  }
+  
+  .text-brand-body {
+    font-family: 'Inter', sans-serif;
+    @apply font-normal text-text-primary;
+    letter-spacing: -0.01em;
+  }
+  
+  .text-brand-cta {
+    font-family: 'Inter', sans-serif;
+    @apply font-semibold;
+    letter-spacing: -0.01em;
+  }
+  
+  .text-brand-code {
+    font-family: 'JetBrains Mono', monospace;
+    @apply font-normal;
+  }
+  
+  /* Brand Animation Classes */
+  .animate-fade-in {
+    animation: fadeIn var(--transition-normal) ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp var(--transition-slow) ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn var(--transition-normal) ease-out;
+  }
+  
+  /* Brand Shadow Classes */
+  .shadow-brand-sm {
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .shadow-brand-md {
+    box-shadow: var(--shadow-md);
+  }
+  
+  .shadow-brand-lg {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  /* Brand Spacing Classes */
+  .space-brand-xs {
+    gap: var(--spacing-xs);
+  }
+  
+  .space-brand-sm {
+    gap: var(--spacing-sm);
+  }
+  
+  .space-brand-md {
+    gap: var(--spacing-md);
+  }
+  
+  .space-brand-lg {
+    gap: var(--spacing-lg);
+  }
+  
+  .space-brand-xl {
+    gap: var(--spacing-xl);
+  }
+  
+  /* Interactive Elements */
+  .hover-lift {
+    @apply transition-transform duration-200 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply -translate-y-0.5;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-200 ease-out;
+  }
+  
+  .hover-scale:hover {
+    @apply scale-105;
+  }
+  
+  /* Brand Gradients */
+  .gradient-brand {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-brand-secondary) 100%);
+  }
+  
+  .gradient-accent {
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-conversion-accent) 100%);
+  }
+}
+
+@layer utilities {
+  /* Typography Breathing Effects */
+  .letter-spacing-breathe {
+    letter-spacing: -0.02em;
+    transition: letter-spacing var(--transition-normal) ease-out;
+  }
+  
+  .letter-spacing-breathe:hover {
+    letter-spacing: 0.01em;
+  }
+  
+  /* Morphing Navigation Indicators */
+  .nav-indicator {
+    transition: all var(--transition-slow) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Code-Inspired Grid Animations */
+  .grid-animate-item {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all var(--transition-normal) ease-out;
+  }
+  
+  .grid-animate-item.animate-in {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  /* Parallax Depth Layering */
+  .parallax-container {
+    perspective: 1000px;
+  }
+  
+  .parallax-element {
+    transform-style: preserve-3d;
+  }
+  
+  /* Interactive Skill Proficiency Meters */
+  .skill-meter {
+    transition: stroke-dasharray var(--transition-slow) ease-out;
+  }
+  
+  /* Hover State Micro-Interactions */
+  .micro-interaction {
+    transition: all var(--transition-fast) ease-out;
+  }
+  
+  .micro-interaction:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  /* Mobile Optimization */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Performance Optimizations */
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  .will-change-opacity {
+    will-change: opacity;
+  }
+  
+  .gpu-accelerated {
+    transform: translateZ(0);
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-3xl;
+  }
+  
+  h2 {
+    @apply text-2xl;
+  }
+  
+  h3 {
+    @apply text-xl;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-border: #000000;
+    --color-text-secondary: #000000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    @apply text-black bg-white;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}
