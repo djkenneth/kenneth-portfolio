@@ -99,10 +99,10 @@ const SkillCard = ({ skill, index, isVisible }) => {
             <Icon name="Calendar" size={12} />
             <span>{skill?.experience}</span>
           </span>
-          <span className="flex items-center space-x-1">
+          {/* <span className="flex items-center space-x-1">
             <Icon name="FolderOpen" size={12} />
             <span>{skill?.projects} projects</span>
-          </span>
+          </span> */}
         </div>
 
         {/* Hover Overlay */}

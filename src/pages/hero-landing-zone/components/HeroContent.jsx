@@ -57,7 +57,7 @@ const HeroContent = ({ onNavigate }) => {
       {/* Main Heading */}
       <motion.div variants={itemVariants} className="mb-6">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-4 letter-spacing-breathe">
-          Frontend Developer
+          Web Developer
         </h1>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-text-secondary mb-6">
           Building Digital Experiences
@@ -67,9 +67,7 @@ const HeroContent = ({ onNavigate }) => {
       {/* Description */}
       <motion.div variants={itemVariants} className="mb-8">
         <p className="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-          I blend technical excellence with creative vision to craft modern web applications. 
-          Specializing in React ecosystem, component architecture, and performance optimization 
-          to deliver solutions that solve real problems.
+          To leverage my potential in the field of web development and utilize my innovative and creative skills for both self and company growth. As a hard-working programmer with a knack for creating efficient solutions, I aim to contribute my programming expertise to drive organizational success and personal development.
         </p>
       </motion.div>
       {/* Key Skills Tags */}
@@ -118,7 +116,7 @@ const HeroContent = ({ onNavigate }) => {
         </Button>
       </motion.div>
       {/* Social Proof */}
-      <motion.div
+      {/* <motion.div
         variants={itemVariants}
         className="mt-16 pt-8 border-t border-border"
       >
@@ -130,7 +128,7 @@ const HeroContent = ({ onNavigate }) => {
           <div className="w-1 h-1 bg-text-secondary rounded-full"></div>
           <div className="text-xs font-medium text-text-secondary">100% Client Satisfaction</div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 };

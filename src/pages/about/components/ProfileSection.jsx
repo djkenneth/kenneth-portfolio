@@ -5,10 +5,10 @@ import Icon from '../../../components/AppIcon';
 
 const ProfileSection = () => {
   const profileStats = [
-    { label: "Years Experience", value: "3+", icon: "Calendar" },
-    { label: "Projects Completed", value: "25+", icon: "FolderOpen" },
+    { label: "Years Experience", value: "5+", icon: "Calendar" },
+    // { label: "Projects Completed", value: "25+", icon: "FolderOpen" },
     { label: "Technologies Mastered", value: "15+", icon: "Code" },
-    { label: "Client Satisfaction", value: "100%", icon: "Star" }
+    // { label: "Client Satisfaction", value: "100%", icon: "Star" }
   ];
 
   return (
@@ -102,7 +102,7 @@ const ProfileSection = () => {
             <span className="text-accent"> Precision & Passion</span>
           </h2>
           <p className="text-lg text-text-primary leading-relaxed">
-            I'm Kenneth Ivan Pineda, a frontend developer who believes that great code is more than syntax—it's about creating meaningful digital experiences that solve real problems and connect with people.
+            I'm Kenneth Ivan Pineda, a Web Developer with over 5 years of experience specializing in frontend and full-stack development. I believe that great code is more than syntax—it's about creating meaningful digital experiences that solve real problems and connect with people.
           </p>
         </motion.div>
 
@@ -114,7 +114,7 @@ const ProfileSection = () => {
           className="space-y-4"
         >
           <p className="text-text-primary leading-relaxed">
-            My journey in web development began with curiosity and has evolved into a passion for building applications that not only function flawlessly but also provide intuitive, accessible experiences for every user.
+            My journey began in 2019 as a Junior Web Developer, where I converted UI/UX designs into functional websites. Today, I develop and maintain complex web and mobile applications, build scalable APIs, and optimize performance for exceptional user experiences.
           </p>
           <p className="text-text-primary leading-relaxed">
             I specialize in modern React ecosystems, component architecture, and performance optimization, always staying current with emerging technologies while maintaining a focus on proven, reliable solutions.

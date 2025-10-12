@@ -29,7 +29,7 @@ const SkillsShowcase = () => {
       description: "Building modern, interactive user interfaces with React 18+ functional components and hooks",
       proficiency: 95,
       experience: "4+ years",
-      projects: 25,
+      projects: 0,
       isNew: false
     },
     {
@@ -40,7 +40,7 @@ const SkillsShowcase = () => {
       description: "Type-safe JavaScript development for scalable applications",
       proficiency: 88,
       experience: "3+ years",
-      projects: 18,
+      projects: 0,
       isNew: false
     },
     {
@@ -51,108 +51,307 @@ const SkillsShowcase = () => {
       description: "Full-stack React framework with SSR, SSG, and API routes",
       proficiency: 92,
       experience: "3+ years",
-      projects: 15,
+      projects: 0,
       isNew: false
     },
     {
       id: 4,
-      name: "Node.js",
-      category: "backend",
-      icon: "Server",
-      description: "Server-side JavaScript runtime for building scalable applications",
+      name: "React Native",
+      category: "frontend",
+      icon: "Code",
+      description: "Building cross-platform mobile applications for iOS and Android",
       proficiency: 85,
       experience: "3+ years",
-      projects: 12,
+      projects: 0,
       isNew: false
     },
     {
       id: 5,
-      name: "MongoDB",
-      category: "backend",
-      icon: "Database",
-      description: "NoSQL database for modern web applications",
-      proficiency: 78,
-      experience: "2+ years",
-      projects: 10,
+      name: "Redux / Zustand / React Query",
+      category: "frontend",
+      icon: "Code",
+      description: "State management for complex React applications. Lightweight state management solution for React. Data fetching and caching for React applications",
+      proficiency: 85,
+      experience: "3+ years",
+      projects: 0,
       isNew: false
     },
     {
       id: 6,
+      name: "React Hook Form",
+      category: "frontend",
+      icon: "Code",
+      description: "Performant, flexible forms with easy validation",
+      proficiency: 90,
+      experience: "2+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 7,
+      name: "Chakra UI",
+      category: "frontend",
+      icon: "Code",
+      description: "Modular component library for React applications",
+      proficiency: 90,
+      experience: "3+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 8,
+      name: "Vue.js",
+      category: "frontend",
+      icon: "Code",
+      description: "Progressive JavaScript framework for building user interfaces",
+      proficiency: 80,
+      experience: "2+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 9,
+      name: "Quasar Framework",
+      category: "frontend",
+      icon: "Code",
+      description: "Vue.js framework for building responsive applications",
+      proficiency: 75,
+      experience: "2+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 10,
+      name: "Vuetify.JS",
+      category: "frontend",
+      icon: "Code",
+      description: "Material Design component framework for Vue.js",
+      proficiency: 78,
+      experience: "2+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 11,
+      name: "React Hook Form",
+      category: "frontend",
+      icon: "Code",
+      description: "Performant, flexible forms with easy validation",
+      proficiency: 90,
+      experience: "2+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 12,
       name: "Tailwind CSS",
       category: "frontend",
       icon: "Palette",
       description: "Utility-first CSS framework for rapid UI development",
       proficiency: 93,
       experience: "3+ years",
-      projects: 22,
+      projects: 0,
       isNew: false
     },
     {
-      id: 7,
+      id: 13,
       name: "Framer Motion",
       category: "frontend",
       icon: "Move",
       description: "Production-ready motion library for React applications",
       proficiency: 87,
       experience: "2+ years",
-      projects: 14,
+      projects: 0,
       isNew: false
     },
     {
-      id: 8,
-      name: "Git",
-      category: "tools",
-      icon: "GitBranch",
-      description: "Version control system for tracking code changes",
-      proficiency: 90,
-      experience: "4+ years",
-      projects: 30,
-      isNew: false
-    },
-    {
-      id: 9,
-      name: "Docker",
-      category: "tools",
-      icon: "Package",
-      description: "Containerization platform for application deployment",
-      proficiency: 75,
-      experience: "2+ years",
-      projects: 8,
-      isNew: false
-    },
-    {
-      id: 10,
-      name: "Figma",
-      category: "design",
-      icon: "Figma",
-      description: "Collaborative design tool for UI/UX prototyping",
-      proficiency: 82,
+      id: 14,
+      name: "Node.js / Express.js",
+      category: "backend",
+      icon: "Server",
+      description: "Fast, minimalist web framework for Node.js",
+      proficiency: 85,
       experience: "3+ years",
-      projects: 16,
+      projects: 0,
       isNew: false
     },
     {
-      id: 11,
+      id: 15,
+      name: "Prisma ORM",
+      category: "backend",
+      icon: "Server",
+      description: "Next-generation ORM for Node.js and TypeScript",
+      proficiency: 82,
+      experience: "2+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 16,
+      name: "PostgreSQL / MySQL",
+      category: "backend",
+      icon: "Server",
+      description: "Advanced open-source relational database. Popular open-source relational database management system.",
+      proficiency: 85,
+      experience: "3+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 17,
+      name: "Firebase",
+      category: "backend",
+      icon: "Server",
+      description: "Backend-as-a-Service platform for web and mobile apps",
+      proficiency: 78,
+      experience: "3+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 18,
+      name: "Strapi CMS / Contentful CMS",
+      category: "backend",
+      icon: "Server",
+      description: "Open-source headless CMS built with Node.js. API-first content management platform",
+      proficiency: 85,
+      experience: "3+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 19,
       name: "GraphQL",
       category: "backend",
       icon: "Share2",
       description: "Query language for APIs with flexible data fetching",
       proficiency: 73,
       experience: "1+ years",
-      projects: 6,
+      projects: 0,
       isNew: true
     },
     {
-      id: 12,
-      name: "AWS",
+      id: 20,
+      name: "PHP",
+      category: "backend",
+      icon: "Server",
+      description: "Server-side scripting language for web development",
+      proficiency: 75,
+      experience: "2+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 21,
+      name: "Laravel",
+      category: "backend",
+      icon: "Server",
+      description: "PHP framework for web application development",
+      proficiency: 80,
+      experience: "3+ years",
+      projects: 0,
+      isNew: false
+    },
+    // {
+    //   id: 5,
+    //   name: "MongoDB",
+    //   category: "backend",
+    //   icon: "Database",
+    //   description: "NoSQL database for modern web applications",
+    //   proficiency: 78,
+    //   experience: "2+ years",
+    //   projects: 0,
+    //   isNew: false
+    // },
+    {
+      id: 22,
+      name: "Git",
       category: "tools",
-      icon: "Cloud",
-      description: "Cloud computing platform for scalable infrastructure",
-      proficiency: 68,
-      experience: "1+ years",
-      projects: 5,
-      isNew: true
-    }
+      icon: "GitBranch",
+      description: "Version control system for tracking code changes",
+      proficiency: 90,
+      experience: "4+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 22,
+      name: "Slack",
+      category: "tools",
+      icon: "GitBranch",
+      description: "",
+      proficiency: 90,
+      experience: "4+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 22,
+      name: "Jira / ClickUp",
+      category: "tools",
+      icon: "GitBranch",
+      description: "",
+      proficiency: 90,
+      experience: "3+ years",
+      projects: 0,
+      isNew: false
+    },
+
+    {
+      id: 22,
+      name: "UsePastel",
+      category: "tools",
+      icon: "GitBranch",
+      description: "",
+      proficiency: 78,
+      experience: "2+ years",
+      projects: 0,
+      isNew: false
+    },
+    {
+      id: 22,
+      name: "Google Docs",
+      category: "tools",
+      icon: "GitBranch",
+      description: "",
+      proficiency: 90,
+      experience: "5+ years",
+      projects: 0,
+      isNew: false
+    },
+    // {
+    //   id: 9,
+    //   name: "Docker",
+    //   category: "tools",
+    //   icon: "Package",
+    //   description: "Containerization platform for application deployment",
+    //   proficiency: 75,
+    //   experience: "2+ years",
+    //   projects: 0,
+    //   isNew: false
+    // },
+    {
+      id: 23,
+      name: "Figma",
+      category: "design",
+      icon: "Figma",
+      description: "Collaborative design tool for UI/UX prototyping",
+      proficiency: 82,
+      experience: "3+ years",
+      projects: 0,
+      isNew: false
+    },
+    // {
+    //   id: 12,
+    //   name: "AWS",
+    //   category: "tools",
+    //   icon: "Cloud",
+    //   description: "Cloud computing platform for scalable infrastructure",
+    //   proficiency: 68,
+    //   experience: "1+ years",
+    //   projects: 0,
+    //   isNew: true
+    // }
   ];
 
   // Categories for filtering
@@ -168,10 +367,10 @@ const SkillsShowcase = () => {
   const coreSkills = [
     { name: "React", proficiency: 95, experience: "4+ years" },
     { name: "JavaScript", proficiency: 93, experience: "5+ years" },
-    { name: "CSS", proficiency: 90, experience: "5+ years" },
-    { name: "Node.js", proficiency: 85, experience: "3+ years" },
     { name: "TypeScript", proficiency: 88, experience: "3+ years" },
-    { name: "Next.js", proficiency: 92, experience: "3+ years" }
+    { name: "Next.js", proficiency: 92, experience: "3+ years" },
+    { name: "Node.js", proficiency: 85, experience: "3+ years" },
+    { name: "CSS", proficiency: 90, experience: "5+ years" },
   ];
 
   // Learning timeline data
@@ -332,12 +531,12 @@ const SkillsShowcase = () => {
               <div className="flex items-center justify-center space-x-8 text-sm text-text-secondary">
                 <div className="flex items-center space-x-2">
                   <Icon name="Code" size={16} />
-                  <span>12+ Technologies</span>
+                  <span>20+ Technologies</span>
                 </div>
-                <div className="flex items-center space-x-2">
+                {/* <div className="flex items-center space-x-2">
                   <Icon name="Award" size={16} />
                   <span>4+ Certifications</span>
-                </div>
+                </div> */}
                 <div className="flex items-center space-x-2">
                   <Icon name="TrendingUp" size={16} />
                   <span>5+ Years Experience</span>
@@ -414,7 +613,7 @@ const SkillsShowcase = () => {
         </section>
 
         {/* Learning Timeline */}
-        <section ref={timelineRef} className="py-20 px-6 lg:px-8">
+        {/* <section ref={timelineRef} className="py-20 px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -435,10 +634,10 @@ const SkillsShowcase = () => {
               isVisible={visibleSections?.timeline}
             />
           </div>
-        </section>
+        </section> */}
 
         {/* Certifications */}
-        <section ref={certificationsRef} className="py-20 px-6 lg:px-8 bg-muted/30">
+        {/* <section ref={certificationsRef} className="py-20 px-6 lg:px-8 bg-muted/30">
           <div className="max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -465,7 +664,7 @@ const SkillsShowcase = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Call to Action */}
         <section className="py-20 px-6 lg:px-8 bg-gradient-accent text-white">
