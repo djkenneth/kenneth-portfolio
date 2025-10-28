@@ -20,9 +20,8 @@ const NavigationLinks = () => {
       title: "Connect",
       links: [
         { name: "Contact", path: "/contact-collaboration-hub", icon: "Mail" },
-        { name: "LinkedIn", path: "https://linkedin.com/in/kenneth-pineda", icon: "Linkedin", external: true },
-        { name: "GitHub", path: "https://github.com/kenneth-pineda", icon: "Github", external: true },
-        { name: "Twitter", path: "https://twitter.com/kenneth_dev", icon: "Twitter", external: true }
+        { name: "LinkedIn", path: "https://www.linkedin.com/in/kenneth-ivan-pineda", icon: "Linkedin", external: true },
+        { name: "GitHub", path: "https://github.com/djkenneth", icon: "Github", external: true },
       ]
     },
     {

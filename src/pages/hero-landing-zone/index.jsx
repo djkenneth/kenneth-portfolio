@@ -60,19 +60,25 @@ const HeroLandingZone = () => {
     "description": "Frontend Developer specializing in React, TypeScript, and modern web technologies. Building digital experiences that matter.",
     "url": window.location?.origin,
     "sameAs": [
-      "https://github.com/kenneth-pineda",
-      "https://linkedin.com/in/kenneth-pineda",
-      "https://twitter.com/kenneth_dev"
+      "https://github.com/djkenneth",
+      "https://www.linkedin.com/in/kenneth-ivan-pineda",
     ],
     "knowsAbout": [
       "React",
       "TypeScript",
       "Next.js",
-      "Tailwind CSS",
+      "React Native",
+      "Vue.js",
       "Node.js",
+      "Express.js",
+      "Laravel",
+      "PostgreSQL",
+      "MySQL",
+      "Strapi CMS",
+      "Contentful CMS",
       "Performance Optimization",
       "Web Development",
-      "Frontend Architecture"
+      "Mobile Development"
     ]
   };
 

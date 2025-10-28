@@ -44,9 +44,8 @@ const FooterBrandReinforcement = () => {
             "description": "Frontend Developer specializing in React and modern web technologies",
             "url": "https://kennethpineda.dev",
             "sameAs": [
-              "https://linkedin.com/in/kenneth-pineda",
-              "https://github.com/kenneth-pineda",
-              "https://twitter.com/kenneth_dev"
+              "https://github.com/djkenneth",
+              "https://www.linkedin.com/in/kenneth-ivan-pineda",
             ]
           })}
         </script>
