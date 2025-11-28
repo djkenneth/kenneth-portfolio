@@ -27,7 +27,7 @@ const ProfileSection = () => {
             <div className="overflow-hidden rounded-xl bg-background">
               <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face"
-                alt="Kenneth Ivan Pineda - Frontend Developer"
+                alt="Kenneth Ivan Pineda - Web Developer"
                 className="w-full h-[400px] lg:h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>

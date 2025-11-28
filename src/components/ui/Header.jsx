@@ -14,7 +14,7 @@ const Header = () => {
     { name: 'About', path: '/about', icon: 'User' },
     { name: 'Skills', path: '/skills-showcase', icon: 'Code' },
     { name: 'Projects', path: '/projects-portfolio', icon: 'FolderOpen' },
-    { name: 'Contact', path: '/contact-collaboration-hub', icon: 'Mail' }
+    // { name: 'Contact', path: '/contact-collaboration-hub', icon: 'Mail' }
   ];
 
   useEffect(() => {
@@ -64,7 +64,7 @@ const Header = () => {
               <h1 className="text-xl font-bold text-primary letter-spacing-breathe">
                 Kenneth
               </h1>
-              <p className="text-xs text-text-secondary -mt-1">Frontend Developer</p>
+              <p className="text-xs text-text-secondary -mt-1">Web Developer</p>
             </div>
           </div>
 

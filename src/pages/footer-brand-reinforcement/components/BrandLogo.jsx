@@ -18,7 +18,7 @@ const BrandLogo = ({ onClick, className = "" }) => {
           Kenneth Ivan Pineda
         </h3>
         <p className="text-sm text-text-secondary -mt-1 group-hover:text-accent/80 transition-colors duration-300">
-          Frontend Developer & Creative Technologist
+          Web Developer & Creative Technologist
         </p>
       </div>
     </div>

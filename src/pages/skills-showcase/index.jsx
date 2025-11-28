@@ -275,7 +275,7 @@ const SkillsShowcase = () => {
       isNew: false
     },
     {
-      id: 22,
+      id: 23,
       name: "Slack",
       category: "tools",
       icon: "GitBranch",
@@ -286,7 +286,7 @@ const SkillsShowcase = () => {
       isNew: false
     },
     {
-      id: 22,
+      id: 24,
       name: "Jira / ClickUp",
       category: "tools",
       icon: "GitBranch",
@@ -298,7 +298,7 @@ const SkillsShowcase = () => {
     },
 
     {
-      id: 22,
+      id: 25,
       name: "UsePastel",
       category: "tools",
       icon: "GitBranch",
@@ -309,7 +309,7 @@ const SkillsShowcase = () => {
       isNew: false
     },
     {
-      id: 22,
+      id: 26,
       name: "Google Docs",
       category: "tools",
       icon: "GitBranch",
@@ -331,7 +331,7 @@ const SkillsShowcase = () => {
     //   isNew: false
     // },
     {
-      id: 23,
+      id: 27,
       name: "Figma",
       category: "design",
       icon: "Figma",

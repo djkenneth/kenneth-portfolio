@@ -234,7 +234,7 @@ const ProjectsPortfolio = () => {
   return (
     <>
       <Helmet>
-        <title>Projects Portfolio - Kenneth Ivan Pineda | Frontend Developer</title>
+        <title>Projects Portfolio - Kenneth Ivan Pineda | Web Developer</title>
         <meta name="description" content="Explore Kenneth's curated portfolio of web development projects, featuring React applications, full-stack solutions, and modern frontend experiences." />
         <meta name="keywords" content="React projects, web development portfolio, frontend projects, JavaScript applications" />
       </Helmet>

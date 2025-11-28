@@ -37,15 +37,15 @@ const ContactCollaborationHub = () => {
   return (
     <>
       <Helmet>
-        <title>Contact & Collaboration Hub - Kenneth Ivan Pineda | Frontend Developer</title>
+        <title>Contact & Collaboration Hub - Kenneth Ivan Pineda | Web Developer</title>
         <meta name="description" content="Get in touch with Kenneth Ivan Pineda for your next web development project. Available for React development, UI/UX implementation, and technical consulting. Fast response time guaranteed." />
-        <meta name="keywords" content="contact frontend developer, hire react developer, web development services, Kenneth Pineda contact, project collaboration" />
-        <meta property="og:title" content="Contact Kenneth Ivan Pineda - Frontend Developer" />
+        <meta name="keywords" content="contact web developer, hire react developer, web development services, Kenneth Pineda contact, project collaboration" />
+        <meta property="og:title" content="Contact Kenneth Ivan Pineda - Web Developer" />
         <meta property="og:description" content="Ready to start your next project? Contact Kenneth for professional web development services with guaranteed quality and timely delivery." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Kenneth Ivan Pineda - Frontend Developer" />
-        <meta name="twitter:description" content="Professional frontend developer available for new projects. Specializing in React, modern web technologies, and user experience optimization." />
+        <meta name="twitter:title" content="Contact Kenneth Ivan Pineda - Web Developer" />
+        <meta name="twitter:description" content="Professional web developer available for new projects. Specializing in React, modern web technologies, and user experience optimization." />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
@@ -216,7 +216,7 @@ const ContactCollaborationHub = () => {
                 
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                   <a
-                    href="mailto:kenneth.pineda@email.com"
+                    href="mailto:dj.kenneth.pineda@gmail.com"
                     className="inline-flex items-center space-x-2 bg-gradient-accent text-white px-8 py-4 rounded-lg font-semibold hover:shadow-brand-lg transition-all duration-300 hover:-translate-y-0.5"
                   >
                     <Icon name="Mail" size={20} />

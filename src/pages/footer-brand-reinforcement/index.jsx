@@ -24,24 +24,24 @@ const FooterBrandReinforcement = () => {
   return (
     <>
       <Helmet>
-        <title>Kenneth Ivan Pineda - Frontend Developer Portfolio</title>
-        <meta name="description" content="Kenneth Ivan Pineda - Frontend Developer specializing in React, modern web technologies, and creating exceptional digital experiences. View portfolio, skills, and get in touch." />
-        <meta name="keywords" content="Kenneth Pineda, Frontend Developer, React Developer, Web Developer, JavaScript, TypeScript, Portfolio" />
-        <meta property="og:title" content="Kenneth Ivan Pineda - Frontend Developer Portfolio" />
-        <meta property="og:description" content="Frontend Developer specializing in React and modern web technologies. Building digital experiences that matter." />
+        <title>Kenneth Ivan Pineda - Web Developer Portfolio</title>
+        <meta name="description" content="Kenneth Ivan Pineda - Web Developer specializing in React, modern web technologies, and creating exceptional digital experiences. View portfolio, skills, and get in touch." />
+        <meta name="keywords" content="Kenneth Pineda, Web Developer, React Developer, Web Developer, JavaScript, TypeScript, Portfolio" />
+        <meta property="og:title" content="Kenneth Ivan Pineda - Web Developer Portfolio" />
+        <meta property="og:description" content="Web Developer specializing in React and modern web technologies. Building digital experiences that matter." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://kennethpineda.dev" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kenneth Ivan Pineda - Frontend Developer" />
-        <meta name="twitter:description" content="Frontend Developer specializing in React and modern web technologies." />
+        <meta name="twitter:title" content="Kenneth Ivan Pineda - Web Developer" />
+        <meta name="twitter:description" content="Web Developer specializing in React and modern web technologies." />
         <link rel="canonical" href="https://kennethpineda.dev/footer-brand-reinforcement" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Kenneth Ivan Pineda",
-            "jobTitle": "Frontend Developer",
-            "description": "Frontend Developer specializing in React and modern web technologies",
+            "jobTitle": "Web Developer",
+            "description": "Web Developer specializing in React and modern web technologies",
             "url": "https://kennethpineda.dev",
             "sameAs": [
               "https://github.com/djkenneth",

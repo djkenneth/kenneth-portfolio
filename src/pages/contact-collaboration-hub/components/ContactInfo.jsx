@@ -8,9 +8,9 @@ const ContactInfo = () => {
     {
       icon: 'Mail',
       label: 'Email',
-      value: 'kenneth.pineda@email.com',
+      value: 'dj.kenneth.pineda@gmail.com',
       description: 'Best for detailed project discussions',
-      action: () => window.open('mailto:kenneth.pineda@email.com', '_blank'),
+      action: () => window.open('mailto:dj.kenneth.pineda@gmail.com', '_blank'),
       primary: true
     },
     {
@@ -40,31 +40,31 @@ const ContactInfo = () => {
     {
       name: 'LinkedIn',
       icon: 'Linkedin',
-      url: 'https://linkedin.com/in/kenneth-pineda',
+      url: 'https://www.linkedin.com/in/kenneth-ivan-pineda',
       description: 'Professional network & recommendations',
       color: 'text-blue-600'
     },
     {
       name: 'GitHub',
       icon: 'Github',
-      url: 'https://github.com/kenneth-pineda',
+      url: 'https://github.com/djkenneth',
       description: 'Code repositories & contributions',
       color: 'text-gray-700'
     },
-    {
-      name: 'Twitter',
-      icon: 'Twitter',
-      url: 'https://twitter.com/kenneth_codes',
-      description: 'Tech insights & industry updates',
-      color: 'text-blue-400'
-    },
-    {
-      name: 'Dribbble',
-      icon: 'Dribbble',
-      url: 'https://dribbble.com/kenneth-pineda',
-      description: 'Design portfolio & UI inspiration',
-      color: 'text-pink-500'
-    }
+    // {
+    //   name: 'Twitter',
+    //   icon: 'Twitter',
+    //   url: 'https://twitter.com/kenneth_codes',
+    //   description: 'Tech insights & industry updates',
+    //   color: 'text-blue-400'
+    // },
+    // {
+    //   name: 'Dribbble',
+    //   icon: 'Dribbble',
+    //   url: 'https://dribbble.com/kenneth-pineda',
+    //   description: 'Design portfolio & UI inspiration',
+    //   color: 'text-pink-500'
+    // }
   ];
 
   const availabilityStatus = {

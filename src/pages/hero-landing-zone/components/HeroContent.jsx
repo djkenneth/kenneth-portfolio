@@ -79,6 +79,10 @@ const HeroContent = ({ onNavigate }) => {
             'Next.js',
             'Tailwind CSS',
             'Node.js',
+            'Vue.js',
+            'Laravel',
+            'React Native',
+            'Restful APIs',
             'Performance Optimization'
           ]?.map((skill, index) => (
             <span

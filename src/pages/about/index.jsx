@@ -9,10 +9,10 @@ import CallToActionSection from './components/CallToActionSection';
 const About = () => {
   useEffect(() => {
     // Set page title and meta description for SEO
-    document.title = 'About Kenneth - Frontend Developer | Portfolio';
+    document.title = 'About Kenneth - Web Developer | Portfolio';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription?.setAttribute('content', 'Learn about Kenneth Ivan Pineda, a passionate frontend developer who crafts digital solutions with precision and creativity. Discover his journey, philosophy, and approach to modern web development.');
+      metaDescription?.setAttribute('content', 'Learn about Kenneth Ivan Pineda, a passionate Web developer who crafts digital solutions with precision and creativity. Discover his journey, philosophy, and approach to modern web development.');
     }
 
     // Scroll to top on page load
@@ -81,7 +81,7 @@ const About = () => {
                   transition={{ duration: 0.6, delay: 0.5 }}
                   className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed"
                 >
-                  A passionate frontend developer who transforms ideas into exceptional digital experiences through clean code, thoughtful design, and continuous innovation.
+                  A passionate Web developer who transforms ideas into exceptional digital experiences through clean code, thoughtful design, and continuous innovation.
                 </motion.p>
               </div>
 
@@ -102,7 +102,7 @@ const About = () => {
           {/* Philosophy Section */}
           <motion.section
             variants={sectionVariants}
-            className="py-16 lg:py-24 px-6 lg:px-8"
+            className="py-16 lg:pt-18 px-6 lg:px-8"
           >
             <div className="max-w-7xl mx-auto">
               <PhilosophySection />
@@ -112,7 +112,7 @@ const About = () => {
           {/* Call to Action Section */}
           <motion.section
             variants={sectionVariants}
-            className="py-16 lg:py-24 px-6 lg:px-8 bg-surface/30"
+            className="py-16 lg:pb-18 px-6 lg:px-8 bg-surface/30"
           >
             <div className="max-w-6xl mx-auto">
               <CallToActionSection />

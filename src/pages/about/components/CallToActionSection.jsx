@@ -27,7 +27,7 @@ const CallToActionSection = () => {
       title: "Connect on LinkedIn",
       description: "Let\'s connect and grow our professional network together",
       action: () => {
-        window.open('https://linkedin.com/in/kenneth-pineda', '_blank');
+        window.open('https://www.linkedin.com/in/kenneth-ivan-pineda', '_blank');
       },
       buttonText: "Connect Now",
       variant: "default"
@@ -100,11 +100,11 @@ const CallToActionSection = () => {
           Prefer email? Reach me directly at
         </p>
         <a
-          href="mailto:kenneth.pineda@email.com"
+          href="mailto:dj.kenneth.pineda@gmail.com"
           className="inline-flex items-center space-x-2 text-accent hover:text-accent/80 font-medium transition-colors duration-200"
         >
           <Icon name="Mail" size={16} />
-          <span>kenneth.pineda@email.com</span>
+          <span>dj.kenneth.pineda@gmail.com</span>
         </a>
       </motion.div>
     </div>

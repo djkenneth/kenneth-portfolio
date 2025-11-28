@@ -56,8 +56,8 @@ const HeroLandingZone = () => {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Kenneth Ivan Pineda",
-    "jobTitle": "Frontend Developer",
-    "description": "Frontend Developer specializing in React, TypeScript, and modern web technologies. Building digital experiences that matter.",
+    "jobTitle": "Web Developer",
+    "description": "Web Developer specializing in React, TypeScript, and modern web technologies. Building digital experiences that matter.",
     "url": window.location?.origin,
     "sameAs": [
       "https://github.com/djkenneth",
@@ -85,25 +85,25 @@ const HeroLandingZone = () => {
   return (
     <>
       <Helmet>
-        <title>Kenneth Ivan Pineda - Frontend Developer | React Specialist</title>
+        <title>Kenneth Ivan Pineda - Web Developer | React Specialist</title>
         <meta 
           name="description" 
-          content="Frontend Developer specializing in React, TypeScript, and modern web technologies. Building digital experiences that matter with technical excellence and creative vision." 
+          content="Web Developer specializing in React, TypeScript, and modern web technologies. Building digital experiences that matter with technical excellence and creative vision." 
         />
-        <meta name="keywords" content="Frontend Developer, React Developer, TypeScript, Next.js, Web Development, JavaScript, UI/UX" />
+        <meta name="keywords" content="Web Developer, React Developer, TypeScript, Next.js, Web Development, JavaScript, UI/UX" />
         <meta name="author" content="Kenneth Ivan Pineda" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Kenneth Ivan Pineda - Frontend Developer" />
-        <meta property="og:description" content="Frontend Developer specializing in React and modern web technologies. Available for new opportunities." />
+        <meta property="og:title" content="Kenneth Ivan Pineda - Web Developer" />
+        <meta property="og:description" content="Web Developer specializing in React and modern web technologies. Available for new opportunities." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={window.location?.href} />
         <meta property="og:image" content="/assets/images/kenneth-og-image.jpg" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kenneth Ivan Pineda - Frontend Developer" />
-        <meta name="twitter:description" content="Frontend Developer specializing in React and modern web technologies." />
+        <meta name="twitter:title" content="Kenneth Ivan Pineda - Web Developer" />
+        <meta name="twitter:description" content="Web Developer specializing in React and modern web technologies." />
         <meta name="twitter:image" content="/assets/images/kenneth-twitter-card.jpg" />
         
         {/* Structured Data */}
@@ -154,8 +154,8 @@ const HeroLandingZone = () => {
 
         {/* Screen Reader Only Content */}
         <div className="sr-only">
-          <h1>Kenneth Ivan Pineda - Frontend Developer Portfolio</h1>
-          <p>Welcome to my portfolio. I'm a frontend developer specializing in React and modern web technologies.</p>
+          <h1>Kenneth Ivan Pineda - Web Developer Portfolio</h1>
+          <p>Welcome to my portfolio. I'm a web developer specializing in React and modern web technologies.</p>
           <nav aria-label="Main navigation">
             <ul>
               <li><a href="/about">About Me</a></li>
