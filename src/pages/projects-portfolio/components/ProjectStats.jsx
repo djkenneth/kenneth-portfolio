@@ -20,7 +20,7 @@ const ProjectStats = ({ stats }) => {
           viewport={{ once: true }}
           className="text-center group"
         >
-          <div className="bg-gradient-accent w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+          <div className="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-cyan-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
             <Icon name={stat?.icon} size={24} className="text-white" />
           </div>
           <div className="text-3xl font-bold text-primary mb-1">{stat?.value}</div>

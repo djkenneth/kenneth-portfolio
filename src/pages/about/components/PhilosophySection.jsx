@@ -87,7 +87,7 @@ const PhilosophySection = () => {
         viewport={{ once: true }}
         className="mt-12 text-center"
       >
-        <div className="bg-gradient-brand rounded-xl p-8 text-white relative overflow-hidden">
+        <div className="bg-gradient-to-r from-slate-800 to-slate-700 dark:from-slate-700 dark:to-slate-600 rounded-xl p-8 text-white relative overflow-hidden">
           <div className="absolute top-4 left-4 opacity-20">
             <Icon name="Quote" size={48} />
           </div>

@@ -130,14 +130,11 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center space-x-2">
-            {/* Dark Mode Toggle - Mobile */}
+          <div className="lg:hidden flex items-center space-x-1">
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg text-text-primary hover:text-accent hover:bg-accent/5 transition-all duration-300"
-              aria-label={
-                isDark ? 'Switch to light mode' : 'Switch to dark mode'
-              }
+              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
             >
               <Icon name={isDark ? 'Sun' : 'Moon'} size={18} />
             </button>
@@ -148,63 +145,61 @@ const Header = () => {
             >
               <Icon
                 name={isMenuOpen ? 'X' : 'Menu'}
-                size={24}
+                size={22}
                 className="transition-transform duration-200"
               />
             </button>
           </div>
+        </div>
 
-          {/* Mobile Navigation Menu */}
-          <div
-            className={`lg:hidden transition-all duration-300 ease-out ${
-              isMenuOpen
-                ? 'max-h-96 opacity-100'
-                : 'max-h-0 opacity-0 overflow-hidden'
-            }`}
-          >
-            <div className="px-6 py-4 bg-background/95 backdrop-blur-md border-t border-border">
-              <nav className="space-y-2">
-                {navigationItems?.map((item) => (
-                  <button
-                    key={item?.path}
-                    onClick={() => handleNavigation(item?.path)}
-                    className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-all duration-200 ${
-                      isActivePath(item?.path)
-                        ? 'text-accent bg-accent/10 border-l-2 border-accent'
-                        : 'text-text-primary hover:text-accent hover:bg-accent/5'
-                    }`}
-                  >
-                    <Icon name={item?.icon} size={20} />
-                    <span className="font-medium">{item?.name}</span>
-                    {isActivePath(item?.path) && (
-                      <div className="ml-auto w-2 h-2 bg-accent rounded-full"></div>
-                    )}
-                  </button>
-                ))}
-              </nav>
+        {/* Mobile Navigation Menu — outside the flex row */}
+        <div
+          className={`lg:hidden transition-all duration-300 ease-out overflow-hidden ${
+            isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
+          <div className="px-4 pb-5 pt-2 bg-background dark:bg-slate-900 border-t border-border">
+            <nav className="space-y-1 mb-4">
+              {navigationItems?.map((item) => (
+                <button
+                  key={item?.path}
+                  onClick={() => handleNavigation(item?.path)}
+                  className={`w-full flex items-center space-x-3 px-4 py-3 rounded-xl text-left font-medium transition-all duration-200 ${
+                    isActivePath(item?.path)
+                      ? 'text-accent bg-accent/10 border-l-2 border-accent pl-3'
+                      : 'text-text-primary hover:text-accent hover:bg-accent/5'
+                  }`}
+                >
+                  <Icon name={item?.icon} size={18} />
+                  <span>{item?.name}</span>
+                  {isActivePath(item?.path) && (
+                    <div className="ml-auto w-2 h-2 bg-accent rounded-full" />
+                  )}
+                </button>
+              ))}
+            </nav>
 
-              {/* Mobile CTA Buttons */}
-              <div className="mt-6 pt-4 border-t border-border space-y-3">
-                <Button
-                  variant="outline"
-                  fullWidth
-                  onClick={() => handleNavigation('/contact-collaboration-hub')}
-                  iconName="Download"
-                  iconPosition="left"
-                >
-                  Download Resume
-                </Button>
-                <Button
-                  variant="default"
-                  fullWidth
-                  onClick={() => handleNavigation('/contact-collaboration-hub')}
-                  iconName="MessageCircle"
-                  iconPosition="left"
-                  className="bg-gradient-accent border-0"
-                >
-                  Start a Project
-                </Button>
-              </div>
+            <div className="pt-4 border-t border-border space-y-2">
+              <Button
+                variant="outline"
+                fullWidth
+                onClick={() => handleNavigation('/contact-collaboration-hub')}
+                iconName="Download"
+                iconPosition="left"
+                className="dark:border-slate-600 dark:text-slate-200 dark:hover:bg-slate-700"
+              >
+                Download Resume
+              </Button>
+              <Button
+                variant="default"
+                fullWidth
+                onClick={() => handleNavigation('/contact-collaboration-hub')}
+                iconName="MessageCircle"
+                iconPosition="left"
+                className="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-cyan-500 border-0 text-white"
+              >
+                Start a Project
+              </Button>
             </div>
           </div>
         </div>

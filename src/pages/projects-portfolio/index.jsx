@@ -335,26 +335,26 @@ const ProjectsPortfolio = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-center bg-gradient-accent rounded-2xl p-12 text-white"
+              className="text-center bg-white dark:bg-card rounded-2xl p-12 shadow-brand-md border border-border/50"
             >
-              <h2 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
-              <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-100 mb-4">Ready to Start Your Project?</h2>
+              <p className="text-lg text-gray-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
                 Let's collaborate to bring your ideas to life with modern web technologies and exceptional user experiences.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
-                  variant="outline"
+                  variant="default"
                   size="lg"
-                  className="bg-white/10 border-white/20 text-white hover:bg-white hover:text-primary"
+                  className="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-cyan-500 border-0 text-white"
                   iconName="MessageCircle"
                   iconPosition="left"
                 >
                   Start a Conversation
                 </Button>
                 <Button
-                  variant="ghost"
+                  variant="outline"
                   size="lg"
-                  className="text-white hover:bg-white/10"
+                  className="dark:border-slate-600 dark:text-slate-200 dark:hover:bg-slate-700"
                   iconName="Download"
                   iconPosition="left"
                 >
