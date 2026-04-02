@@ -260,8 +260,11 @@ const ProjectsPortfolio = () => {
                 <span>Featured Work</span>
               </motion.div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
-                Project <span className="text-transparent bg-gradient-accent bg-clip-text">Portfolio</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-slate-100 mb-6">
+                Project{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-cyan-400">
+                  Portfolio
+                </span>
               </h1>
               
               <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
@@ -324,7 +327,7 @@ const ProjectsPortfolio = () => {
             <ProjectTimeline timelineData={timelineData} />
 
             {/* Client Testimonials */}
-            <ClientTestimonial testimonials={testimonials} />
+            {/* <ClientTestimonial testimonials={testimonials} /> */}
 
             {/* Call to Action */}
             <motion.div

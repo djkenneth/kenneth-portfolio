@@ -23,15 +23,16 @@ const ProjectFilter = ({ categories, activeFilter, onFilterChange }) => {
             onClick={() => onFilterChange(category?.id)}
             className={`transition-all duration-300 ${
               activeFilter === category?.id
-                ? "bg-gradient-accent border-0 text-white shadow-brand-md"
+                ? "bg-gradient-accent border-0 text-dark shadow-brand-md"
                 : "hover:border-accent hover:text-accent"
             }`}
           >
             {category?.name}
             {category?.count > 0 && (
-              <span className={`ml-2 px-2 py-0.5 rounded-full text-xs ${
+              <span className={`ml-2 px-2 py-0.5 rounded-full text-xs font-semibold ${
                 activeFilter === category?.id
-                  ? "bg-white/20 text-white" :"bg-muted text-text-secondary"
+                  ? "bg-white/25 text-dark/90"
+                  : "bg-muted text-text-primary dark:bg-slate-700 dark:text-slate-300"
               }`}>
                 {category?.count}
               </span>

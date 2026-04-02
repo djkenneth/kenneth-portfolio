@@ -5,13 +5,12 @@ import Icon from '../../../components/AppIcon';
 const LocationMap = () => {
   const [isMapLoaded, setIsMapLoaded] = useState(false);
 
-  // Mock coordinates for San Francisco
   const location = {
-    lat: 37.7749,
-    lng: -122.4194,
-    name: 'San Francisco, CA',
-    address: 'San Francisco Bay Area, California, USA',
-    timezone: 'PST (UTC-8)',
+    lat: 15.1450,
+    lng: 120.5887,
+    name: 'Balibago, Angeles City, Pampanga',
+    address: 'Balibago, Angeles City, Pampanga, Philippines',
+    timezone: 'PHT (UTC+8)',
     workingHours: 'Mon-Fri, 9:00 AM - 6:00 PM'
   };
 

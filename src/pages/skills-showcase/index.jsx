@@ -521,9 +521,9 @@ const SkillsShowcase = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-slate-100 mb-6">
                 Technical
-                <span className="bg-gradient-accent bg-clip-text text-transparent"> Expertise</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-cyan-400"> Expertise</span>
               </h1>
               <p className="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
                 A comprehensive showcase of my technical skills, continuous learning journey, and professional certifications in modern web development.

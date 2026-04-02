@@ -23,7 +23,7 @@ const ContactInfo = () => {
     {
       icon: 'MapPin',
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Angeles City, Pampanga, Philippines',
       description: 'Open to remote collaboration worldwide',
       action: null
     },

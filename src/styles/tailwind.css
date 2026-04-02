@@ -74,15 +74,58 @@
     --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
   }
   
+  .dark {
+    /* Core Brand Colors - Dark Mode */
+    --color-background: #0f172a; /* slate-900 */
+    --color-foreground: #f1f5f9; /* slate-100 */
+    --color-card: #1e293b; /* slate-800 */
+    --color-card-foreground: #f1f5f9; /* slate-100 */
+    --color-popover: #1e293b; /* slate-800 */
+    --color-popover-foreground: #f1f5f9; /* slate-100 */
+    --color-primary: #f8fafc; /* slate-50 */
+    --color-primary-foreground: #0f172a; /* slate-900 */
+    --color-secondary: #1e293b; /* slate-800 */
+    --color-secondary-foreground: #f1f5f9; /* slate-100 */
+    --color-muted: #1e293b; /* slate-800 */
+    --color-muted-foreground: #94a3b8; /* slate-400 */
+    --color-accent: #3b82f6; /* blue-500 */
+    --color-accent-foreground: #ffffff; /* white */
+    --color-destructive: #f87171; /* red-400 */
+    --color-destructive-foreground: #0f172a; /* slate-900 */
+    --color-success: #34d399; /* emerald-400 */
+    --color-success-foreground: #0f172a;
+    --color-warning: #fbbf24; /* amber-400 */
+    --color-warning-foreground: #0f172a;
+    --color-error: #f87171; /* red-400 */
+    --color-error-foreground: #0f172a;
+    --color-border: #334155; /* slate-700 */
+    --color-input: #1e293b; /* slate-800 */
+    --color-ring: #3b82f6; /* blue-500 */
+
+    /* Supporting Colors - Dark Mode */
+    --color-text-primary: #e2e8f0; /* slate-200 */
+    --color-text-secondary: #94a3b8; /* slate-400 */
+    --color-surface: #1e293b; /* slate-800 */
+    --color-brand-secondary: #94a3b8; /* slate-400 */
+    --color-conversion-accent: #60a5fa; /* blue-400 */
+
+    /* Shadow System - Dark Mode */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.4);
+  }
+
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
     line-height: 1.6;
     letter-spacing: -0.01em;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   h1, h2, h3, h4, h5, h6 {

@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Icon from '../AppIcon';
 import Button from './Button';
+import { useTheme } from '../../context/ThemeContext';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -40,23 +42,25 @@ const Header = () => {
   };
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-background/95 backdrop-blur-md shadow-brand-sm border-b border-border' 
+        isScrolled
+          ? 'bg-background/95 backdrop-blur-md shadow-brand-sm border-b border-border'
           : 'bg-transparent'
       }`}
     >
       <div className="w-full">
         <div className="flex items-center justify-between h-16 px-6 lg:px-8">
           {/* Logo */}
-          <div 
+          <div
             className="flex items-center cursor-pointer group"
             onClick={() => handleNavigation('/hero-landing-zone')}
           >
             <div className="relative">
               <div className="w-10 h-10 bg-gradient-brand rounded-lg flex items-center justify-center shadow-brand-sm group-hover:shadow-brand-md transition-all duration-300">
-                <span className="text-white font-bold text-lg font-jetbrains-mono">K</span>
+                <span className="text-white font-bold text-lg font-jetbrains-mono">
+                  K
+                </span>
               </div>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-success rounded-full border-2 border-background animate-pulse"></div>
             </div>
@@ -76,7 +80,8 @@ const Header = () => {
                 onClick={() => handleNavigation(item?.path)}
                 className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 group ${
                   isActivePath(item?.path)
-                    ? 'text-accent bg-accent/10' :'text-text-primary hover:text-accent hover:bg-accent/5'
+                    ? 'text-accent bg-accent/10'
+                    : 'text-text-primary hover:text-accent hover:bg-accent/5'
                 }`}
               >
                 <span className="relative z-10 flex items-center space-x-2">
@@ -91,7 +96,17 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-3">
+            {/* Dark Mode Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-lg text-text-primary hover:text-accent hover:bg-accent/5 transition-all duration-300"
+              aria-label={
+                isDark ? 'Switch to light mode' : 'Switch to dark mode'
+              }
+            >
+              <Icon name={isDark ? 'Sun' : 'Moon'} size={18} />
+            </button>
             <Button
               variant="outline"
               size="sm"
@@ -108,86 +123,100 @@ const Header = () => {
               onClick={() => handleNavigation('/contact-collaboration-hub')}
               iconName="MessageCircle"
               iconPosition="left"
-              className="bg-gradient-accent border-0 text-sm"
+              className="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-cyan-500 border-0 text-sm text-white"
             >
               Let's Talk
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="lg:hidden p-2 rounded-lg text-text-primary hover:text-accent hover:bg-accent/5 transition-colors duration-200"
-            aria-label="Toggle menu"
-          >
-            <Icon 
-              name={isMenuOpen ? 'X' : 'Menu'} 
-              size={24} 
-              className="transition-transform duration-200"
-            />
-          </button>
-        </div>
+          <div className="lg:hidden flex items-center space-x-2">
+            {/* Dark Mode Toggle - Mobile */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-lg text-text-primary hover:text-accent hover:bg-accent/5 transition-all duration-300"
+              aria-label={
+                isDark ? 'Switch to light mode' : 'Switch to dark mode'
+              }
+            >
+              <Icon name={isDark ? 'Sun' : 'Moon'} size={18} />
+            </button>
+            <button
+              onClick={toggleMenu}
+              className="p-2 rounded-lg text-text-primary hover:text-accent hover:bg-accent/5 transition-colors duration-200"
+              aria-label="Toggle menu"
+            >
+              <Icon
+                name={isMenuOpen ? 'X' : 'Menu'}
+                size={24}
+                className="transition-transform duration-200"
+              />
+            </button>
+          </div>
 
-        {/* Mobile Navigation Menu */}
-        <div 
-          className={`lg:hidden transition-all duration-300 ease-out ${
-            isMenuOpen 
-              ? 'max-h-96 opacity-100' :'max-h-0 opacity-0 overflow-hidden'
-          }`}
-        >
-          <div className="px-6 py-4 bg-background/95 backdrop-blur-md border-t border-border">
-            <nav className="space-y-2">
-              {navigationItems?.map((item) => (
-                <button
-                  key={item?.path}
-                  onClick={() => handleNavigation(item?.path)}
-                  className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-all duration-200 ${
-                    isActivePath(item?.path)
-                      ? 'text-accent bg-accent/10 border-l-2 border-accent' :'text-text-primary hover:text-accent hover:bg-accent/5'
-                  }`}
+          {/* Mobile Navigation Menu */}
+          <div
+            className={`lg:hidden transition-all duration-300 ease-out ${
+              isMenuOpen
+                ? 'max-h-96 opacity-100'
+                : 'max-h-0 opacity-0 overflow-hidden'
+            }`}
+          >
+            <div className="px-6 py-4 bg-background/95 backdrop-blur-md border-t border-border">
+              <nav className="space-y-2">
+                {navigationItems?.map((item) => (
+                  <button
+                    key={item?.path}
+                    onClick={() => handleNavigation(item?.path)}
+                    className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-all duration-200 ${
+                      isActivePath(item?.path)
+                        ? 'text-accent bg-accent/10 border-l-2 border-accent'
+                        : 'text-text-primary hover:text-accent hover:bg-accent/5'
+                    }`}
+                  >
+                    <Icon name={item?.icon} size={20} />
+                    <span className="font-medium">{item?.name}</span>
+                    {isActivePath(item?.path) && (
+                      <div className="ml-auto w-2 h-2 bg-accent rounded-full"></div>
+                    )}
+                  </button>
+                ))}
+              </nav>
+
+              {/* Mobile CTA Buttons */}
+              <div className="mt-6 pt-4 border-t border-border space-y-3">
+                <Button
+                  variant="outline"
+                  fullWidth
+                  onClick={() => handleNavigation('/contact-collaboration-hub')}
+                  iconName="Download"
+                  iconPosition="left"
                 >
-                  <Icon name={item?.icon} size={20} />
-                  <span className="font-medium">{item?.name}</span>
-                  {isActivePath(item?.path) && (
-                    <div className="ml-auto w-2 h-2 bg-accent rounded-full"></div>
-                  )}
-                </button>
-              ))}
-            </nav>
-            
-            {/* Mobile CTA Buttons */}
-            <div className="mt-6 pt-4 border-t border-border space-y-3">
-              <Button
-                variant="outline"
-                fullWidth
-                onClick={() => handleNavigation('/contact-collaboration-hub')}
-                iconName="Download"
-                iconPosition="left"
-              >
-                Download Resume
-              </Button>
-              <Button
-                variant="default"
-                fullWidth
-                onClick={() => handleNavigation('/contact-collaboration-hub')}
-                iconName="MessageCircle"
-                iconPosition="left"
-                className="bg-gradient-accent border-0"
-              >
-                Start a Project
-              </Button>
+                  Download Resume
+                </Button>
+                <Button
+                  variant="default"
+                  fullWidth
+                  onClick={() => handleNavigation('/contact-collaboration-hub')}
+                  iconName="MessageCircle"
+                  iconPosition="left"
+                  className="bg-gradient-accent border-0"
+                >
+                  Start a Project
+                </Button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      {/* Progress Indicator */}
-      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-border">
-        <div 
-          className="h-full bg-gradient-accent transition-all duration-300 nav-indicator"
-          style={{
-            width: `${Math.min(100, (window.scrollY / (document.documentElement?.scrollHeight - window.innerHeight)) * 100)}%`
-          }}
-        ></div>
+        {/* Progress Indicator */}
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-border">
+          <div
+            className="h-full bg-gradient-accent transition-all duration-300 nav-indicator"
+            style={{
+              width: `${Math.min(100, (window.scrollY / (document.documentElement?.scrollHeight - window.innerHeight)) * 100)}%`,
+            }}
+          ></div>
+        </div>
       </div>
     </header>
   );

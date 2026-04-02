@@ -78,10 +78,10 @@ const ContactCollaborationHub = () => {
 
                 <motion.h1
                   variants={itemVariants}
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 letter-spacing-breathe"
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-slate-100 mb-6 letter-spacing-breathe"
                 >
                   Let's Build Something
-                  <span className="block text-transparent bg-gradient-accent bg-clip-text">
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-cyan-400">
                     Amazing Together
                   </span>
                 </motion.h1>
@@ -156,7 +156,7 @@ const ContactCollaborationHub = () => {
                   Location & Collaboration
                 </h2>
                 <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-                  Based in San Francisco but available for remote collaboration worldwide. 
+                  Based in Balibago, Angeles City, Pampanga, Philippines — available for remote collaboration worldwide.
                   Let's discuss how we can work together regardless of location.
                 </p>
               </motion.div>

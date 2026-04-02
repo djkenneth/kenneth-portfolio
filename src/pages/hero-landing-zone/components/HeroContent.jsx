@@ -103,7 +103,7 @@ const HeroContent = ({ onNavigate }) => {
           onClick={() => onNavigate('/projects-portfolio')}
           iconName="FolderOpen"
           iconPosition="left"
-          className="bg-gradient-accent border-0 text-white px-8 py-4 text-lg font-semibold hover-lift"
+          className="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-cyan-500 border-0 text-white px-8 py-4 text-lg font-semibold hover-lift"
         >
           View My Work
         </Button>

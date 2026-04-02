@@ -25,12 +25,17 @@ const TechStackCloud = ({ technologies, onTechFilter }) => {
             whileTap={{ scale: 0.95 }}
             onClick={() => onTechFilter && onTechFilter(tech?.name)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-              tech?.level === 'expert' ?'bg-gradient-accent text-white shadow-brand-sm'
-                : tech?.level === 'advanced' ?'bg-accent/10 text-accent border border-accent/20' :'bg-muted text-text-secondary hover:bg-accent/5 hover:text-accent'
+              tech?.level === 'expert'
+                ? 'bg-gradient-accent text-dark shadow-brand-sm'
+                : tech?.level === 'advanced'
+                ? 'bg-accent/15 text-accent border border-accent/30 dark:bg-accent/20 dark:text-blue-300 dark:border-blue-400/30'
+                : 'bg-muted text-text-secondary border border-border hover:bg-accent/5 hover:text-accent dark:hover:text-blue-300'
             }`}
           >
             {tech?.name}
-            <span className="ml-2 text-xs opacity-75">
+            <span className={`ml-2 text-xs font-semibold ${
+              tech?.level === 'expert' ? 'text-dark/90' : 'opacity-60'
+            }`}>
               {tech?.projectCount}
             </span>
           </motion.button>
